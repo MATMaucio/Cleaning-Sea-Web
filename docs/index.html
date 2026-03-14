@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Sea | Playtest Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🌊 Cleaning Sea</div>
+        <ul class="nav-links">
+            <li><a href="#about">El Juego</a></li>
+            <li><a href="#descargas">Demos</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#equipo">Dev Team</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Cleaning Sea</h1>
+            <p>Sumérgete en la misión para salvar nuestros océanos. Recolecta residuos, mejora tu equipo y restaura el ecosistema marino.</p>
+            <a href="#descargas" class="btn-primary">Probar la Demo</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>La Misión</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>En <strong>Cleaning Sea</strong>, tomas el control de una embarcación ecológica especializada. Tu objetivo es explorar mapas generados dinámicamente, gestionar tus recursos y limpiar diferentes tipos de contaminación oceánica.</p>
+            </div>
+            <div class="about-image">
+                <div class="placeholder-img">[Imagen del Gameplay / Concept Art]</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="descargas" class="section bg-dark">
+        <h2>Playtest Hub</h2>
+        <p>Descarga la última versión de desarrollo y ayúdanos a mejorar las mecánicas.</p>
+        
+        <div class="download-cards">
+            <div class="card">
+                <h3>Versión 0.1-Alpha</h3>
+                <p>Mecánicas base de navegación y recolección de superficie activa.</p>
+                <p class="size">Tamaño: ~150MB</p>
+                <a href="#" class="btn-download">Descargar para Windows</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="section">
+        <h2>Deja tu Feedback Técnico</h2>
+        <p>¿Encontraste un bug? ¿Las mecánicas se sienten bien? Cuéntanos.</p>
+        
+        <form id="feedbackForm" class="feedback-form">
+            <div class="form-group">
+                <label for="version">Versión probada:</label>
+                <input type="text" id="version" name="version" value="v0.1-Alpha" readonly>
+            </div>
+            
+            <div class="form-group">
+                <label for="rating">¿Cómo sientes los controles y mecánicas?</label>
+                <select id="rating" name="rating" required>
+                    <option value="" disabled selected>Selecciona una puntuación</option>
+                    <option value="5">5 - Excelentes, muy fluidos</option>
+                    <option value="4">4 - Buenos, pero mejorables</option>
+                    <option value="3">3 - Regulares</option>
+                    <option value="2">2 - Toscos o difíciles de usar</option>
+                    <option value="1">1 - Injugable / Lleno de bugs</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comentario">Comentarios (Bugs, sugerencias, etc.):</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Tu correo (Opcional, para contactarte sobre tus ideas):</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Feedback a la Base de Datos</button>
+        </form>
+    </section>
+
+    <section id="equipo" class="section bg-dark">
+        <h2>Dev Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="avatar">[Tu Foto/Avatar]</div>
+                <h3>[Tu Nombre]</h3>
+                <p>Tech Lead & Programmer</p>
+            </div>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cleaning Sea Development Team.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/supabase-client.js"></script>
+</body>
+</html>
